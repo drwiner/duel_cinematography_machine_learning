@@ -1,0 +1,78 @@
+learning naive bayes
+testing naive bayes
+total:	precision:	0.4934782608695652	recall	0.4934782608695652	fscores	0.4934782608695652
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5413043478260869	recall	0.5413043478260869	fscores	0.5413043478260869
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5369565217391304	recall	0.5369565217391304	fscores	0.5369565217391304
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5173913043478261	recall	0.5173913043478261	fscores	0.5173913043478261
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5173913043478261	recall	0.5173913043478261	fscores	0.5173913043478261
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5391304347826087	recall	0.5391304347826087	fscores	0.5391304347826087
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5217391304347826	recall	0.5217391304347826	fscores	0.5217391304347826
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5282608695652173	recall	0.5282608695652173	fscores	0.5282608695652173
+learning naive bayes
+testing naive bayes
+total:	precision:	0.48478260869565215	recall	0.48478260869565215	fscores	0.48478260869565215
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5239130434782608	recall	0.5239130434782608	fscores	0.5239130434782608
+learning naive bayes
+testing naive bayes
+total:	precision:	0.508695652173913	recall	0.508695652173913	fscores	0.508695652173913
+learning naive bayes
+testing naive bayes
+total:	precision:	0.4934782608695652	recall	0.4934782608695652	fscores	0.4934782608695652
+learning naive bayes
+testing naive bayes
+total:	precision:	0.4652173913043478	recall	0.4652173913043478	fscores	0.4652173913043478
+learning naive bayes
+testing naive bayes
+total:	precision:	0.48695652173913045	recall	0.48695652173913045	fscores	0.48695652173913045
+learning naive bayes
+testing naive bayes
+total:	precision:	0.48478260869565215	recall	0.48478260869565215	fscores	0.48478260869565215
+learning naive bayes
+testing naive bayes
+total:	precision:	0.48043478260869565	recall	0.48043478260869565	fscores	0.48043478260869565
+learning naive bayes
+testing naive bayes
+total:	precision:	0.4826086956521739	recall	0.4826086956521739	fscores	0.4826086956521739
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5108695652173914	recall	0.5108695652173914	fscores	0.5108695652173914
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5260869565217391	recall	0.5260869565217391	fscores	0.5260869565217391
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5108695652173914	recall	0.5108695652173914	fscores	0.5108695652173914
+gamma:	20	acc:	0.4886956521739131
+gamma:	10	acc:	0.5204347826086956
+gamma:	6	acc:	0.5156521739130434
+gamma:	4	acc:	0.5060869565217392
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5434782608695652	recall	0.5434782608695652	fscores	0.5434782608695652
+learning naive bayes
+testing naive bayes
+total:	precision:	0.5021739130434782	recall	0.5021739130434782	fscores	0.5021739130434782
+learning naive bayes
+testing naive bayes
+total:	precision:	0.4673913043478261	recall	0.4673913043478261	fscores	0.4673913043478261
+learning naive bayes
+testing naive bayes
+total:	precision:	0.4608695652173913	recall	0.4608695652173913	fscores	0.4608695652173913
+learning naive bayes
+testing naive bayes
