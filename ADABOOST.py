@@ -86,7 +86,7 @@ def is_finished(ada_classifier, examples, num_rounds, target_label):
 	x = use_classifier_target(ada_classifier, examples, target_label)
 	if x == len(examples):
 		return True
-	if num_rounds > 10:
+	if num_rounds > 25:
 		return True
 	return False
 
@@ -95,7 +95,7 @@ def is_finished_multiclass(ada_classifier, examples, num_rounds, labels):
 	x = use_classifier_multiclass(ada_classifier, examples, labels)
 	if x == len(examples):
 		return True
-	if num_rounds > 10:
+	if num_rounds > 25:
 		return True
 	return False
 
@@ -141,21 +141,19 @@ def update_weights(weights, error, right_or_wrong):
 
 
 def use_classifier_target(H, examples, target_label):
-	sign = 0
+
 	num_correct = 0
 	if len(H) == 0:
 		return 0
 	for ex in examples:
+		sign = 0
 		for (alpha, h) in H:
 
 			guess = use_tree(h, ex)
-			if guess == target_label and ex.label == target_label:
-				sign += alpha
-			elif guess == -1 and ex.label != target_label:
+			if guess == target_label:
 				sign += alpha
 			else:
 				sign -= alpha
-
 
 		if sign >= 0 and ex.label == target_label:
 			num_correct += 1
@@ -166,17 +164,15 @@ def use_classifier_target(H, examples, target_label):
 
 
 def use_classifier_multiclass(H, examples, labels):
-	sign = 0
+
 	num_correct = 0
 	for ex in examples:
 		best = [-1000, None]
 		for label in labels:
-
+			sign = 0
 			for (alpha, h, h_label) in H:
 				guess = use_tree(h, ex)
-				if guess == h_label and ex.label == h_label:
-					sign += alpha
-				elif guess == -1 and ex.label != h_label:
+				if guess == h_label:
 					sign += alpha
 				else:
 					sign -= alpha
@@ -234,7 +230,7 @@ if __name__ == "__main__":
 	7] GOTO 2
 	"""
 
-	do_binary = 1
+	do_binary = 0
 	do_multiclass = 1
 
 

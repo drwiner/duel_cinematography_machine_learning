@@ -3,6 +3,8 @@ import random
 from collections import namedtuple, defaultdict
 import math
 from clockdeco import clock
+from ID3 import load_examples_from_file
+from generate_features import get_num_feats
 
 LabeledEx = namedtuple('LabeledEx', ['label', 'feats'])
 
@@ -21,29 +23,6 @@ shots_into_scene_feats = list()
 scale_label_dict = {'cu':0, 'waist':1, 'figure':2, 'wide':3}
 xpos_label_dict = {'left': 0, 'center-left': 1, 'center': 2, 'full': 2, 'center-right': 3, 'right': 4}
 
-
-def split_duration(value):
-	if value <= 2.5:
-		return 0
-	elif value < 5.7:
-		return 1
-	return 2
-
-
-def split_interval_into_k(interval_value, k):
-	intrvl = 1/k
-	for i in range(1, k):
-		if interval_value < intrvl*i:
-			return i-1
-	return k-1
-
-
-def split_shot_into_k(shot_num, num_shots, k):
-	shot_intrvl = num_shots / k
-	for i in range(1,k):
-		if shot_num < shot_intrvl * i:
-			return i-1
-	return k-1
 
 
 def likelihood(count_feat_label, gamma, count_label, num_labels):
@@ -125,29 +104,37 @@ def test_naive_bayes(examples, likes, rlikes, log_priors, labels, lfi):
 	recalls = []
 	fscores = []
 	for k in labels:
-		precision = correct_per_label[k] / (correct_per_label[k] + incorrect_per_label[k])
+		try:
+			precision = correct_per_label[k] / (correct_per_label[k] + incorrect_per_label[k])
+		except:
+			precision = 0
 		precisions.append(precision)
-		recall = correct_per_label[k] / (correct_per_label[k] + incorrect_per_guess[k])
+		try:
+			recall = correct_per_label[k] / (correct_per_label[k] + incorrect_per_guess[k])
+		except:
+			recall = 0
 		recalls.append(recall)
-		fscore = (2 * recall * precision) / (recall + precision)
+		try:
+			fscore = (2 * recall * precision) / (recall + precision)
+		except:
+			fscore = 0
 		fscores.append(fscore)
 		# print("label:\t{}\tprecision:\t{}\trecall\t{}\tfscores\t{}".format(k, precision, recall, fscore))
 
-	total_p = sum(correct_per_label) / (sum(correct_per_label) + sum(incorrect_per_label))
-	total_r = sum(correct_per_label) / (sum(correct_per_label) + sum(incorrect_per_guess))
-	total_f = (2 * total_r * total_p) / (total_r + total_p)
-	print("total:\tprecision:\t{}\trecall\t{}\tfscores\t{}".format(total_p, total_r, total_f))
+	acc = num_correct / len(examples)
+	# print("total acc:\t{}".format(acc))
 
-	return precisions, recalls, fscores, total_p, total_r, total_f
+	return precisions, recalls, fscores, acc
 
 
-def run_naive_bayes(example_sets, labels, largest_index):
+def run_naive_bayes(example_sets, labels, largest_index, gamma):
 
 	# each 'i' is test
 	total_per_fold = defaultdict(int)
 	num_folds = len(example_sets)
-	gamma = [20, 10, 6, 4]
-	         #2, 1.5, 1, .5]
+
+
+	#2, 1.5, 1, .5]
 
 	for i in range(num_folds):
 		# each 'j' is training
@@ -161,155 +148,46 @@ def run_naive_bayes(example_sets, labels, largest_index):
 		for gam in gamma:
 			# print('gamma=\t{}'.format(gam))
 			likes, rlikes, priors = naive_bayes(training, labels, gam, largest_index)
-			precisions, recalls, fscores, total_p, total_r, total_f = test_naive_bayes(example_sets[i], likes, rlikes, priors, labels, largest_index)
-			total_per_fold[gam] += total_p
+			precisions, recalls, fscores, acc = test_naive_bayes(example_sets[i], likes, rlikes, priors, labels, largest_index)
+			total_per_fold[gam] += acc
 
 	for gam in gamma:
 		print("gamma:\t{}\tacc:\t{}".format(gam, total_per_fold[gam] / num_folds))
 
 
-def parse_featlist(file_name, label_name):
-	examples = []
-
-	with open(file_name, 'r') as fn:
-		for line in fn:
-			example_tuple = eval(line)
-			feat_list = []
-
-
-			feat_list.append(action_feats_dict[example_tuple[1]])
-
-			if example_tuple[2]:
-				feat_list.append(starts_feat)
-			if example_tuple[3]:
-				feat_list.append(finish_feat)
-
-			for item in example_tuple[4]:
-				if item in action_sh_e.keys():
-					feat_list.append(action_sh_e[item])
-			for item in example_tuple[5]:
-				if item in action_nsh_e.keys():
-					feat_list.append(action_nsh_e[item])
-			for item in example_tuple[6]:
-				if item in action_sh.keys():
-					feat_list.append(action_sh[item])
-			for item in example_tuple[7]:
-				if item in action_nsh.keys():
-					feat_list.append(action_nsh[item])
-
-			feat_list.append(scene_feats[example_tuple[8]])
-
-			# shot duration (short medium long)
-			feat_list.append(duration_feats[split_duration(example_tuple[9])])
-			# into-scene time (beg mid end)
-			feat_list.append(into_scene_feats[split_interval_into_k(example_tuple[10], 3)])
-			# shot number...
-			shot_num = example_tuple[11]
-			# total number of shots. Into scene shot (beg mid end)
-			feat_list.append(shots_into_scene_feats[split_shot_into_k(shot_num, example_tuple[12], 3)])
-			scale_label = scale_label_dict[example_tuple[13]]
-			# for now, not used
-			zpos = example_tuple[14]
-			xpos = xpos_label_dict[example_tuple[15]]
-
-			feat_list = list(set(feat_list))
-			feat_list.sort()
-			if label_name == "xpos":
-				examples.append(LabeledEx(xpos, feat_list))
-			elif label_name == "scale":
-				examples.append(LabeledEx(scale_label, feat_list))
-
-	return examples
-
-
-def get_num_feats():
-	"""
-	FEATURES:
-	"""
-	with open("action_types.txt", 'r') as att:
-		for j, line in enumerate(att):
-			action_feats_dict[line.strip()] = j
-
-	num_feats = 0
-	# 1 : actions (39)
-	num_feats += len(action_feats_dict.values())
-	# 2-3 : starts, finishes (2)
-	global starts_feat
-	starts_feat = num_feats
-	global finish_feat
-	finish_feat = num_feats + 1
-	num_feats += 2
-	# 4-7 : actions (39)
-	global action_sh_e
-	action_sh_e = {val: i + num_feats for val, i in action_feats_dict.items()}
-	num_feats += len(action_feats_dict.values())
-	global action_nsh_e
-	action_nsh_e = {val: i + num_feats for val, i in action_feats_dict.items()}
-	num_feats += len(action_feats_dict.values())
-	global action_sh
-	action_sh = {val: i + num_feats for val, i in action_feats_dict.items()}
-	num_feats += len(action_feats_dict.values())
-	global action_nsh
-	action_nsh = {val: i + num_feats for val, i in action_feats_dict.items()}
-	num_feats += len(action_feats_dict.values())
-	# 8 : scenes (30)
-
-	with open("scenes.txt", 'r') as stt:
-		for z, line in enumerate(stt):
-			scene_feats[line.strip()] = z + num_feats
-
-	num_feats += len(scene_feats)
-	# 9 : duration of shot (short, med, long)
-	global duration_feats
-	duration_feats = [num_feats, num_feats+1, num_feats +2]
-	num_feats += 3
-	# 10 : into-scene time [0-1] (beg, mid end)
-	global into_scene_feats
-	into_scene_feats = [num_feats, num_feats + 1, num_feats + 2]
-	num_feats += 3
-	# 11 : shot number (into-scene proportation, beg, mid, end)
-	global shots_into_scene_feats
-	shots_into_scene_feats = [num_feats, num_feats + 1, num_feats + 2]
-	num_feats += 3
-	# 12 : total number shots in scene
-	# 13 : scale (label 1)
-	# 14 : zeta
-	# 15 : position (label 2)
-	return num_feats + 1
-
 
 if __name__ == '__main__':
-	test = "data/test.txt"
-	training_whole = "data/all_train.txt"
+	test = "data/test.{}"
+	training_whole = "data/training.{}"
 	base_cvsplits = "data/CV_Splits/train_{}"
 
+	label_sets = {"scale": [0, 1, 2, 3], "xpos": [0, 1, 2, 3, 4]}
 	lfi = get_num_feats()
-
-	do_cv = 1
+	gamma = [10, 6, 4, 2, 1]
+	do_cv = 0
+	do_whole_test = 1
 
 	if do_cv:
-		training_examples_xpos = [parse_featlist(base_cvsplits.format(i), "xpos") for i in range(5)]
-		training_examples_scale = [parse_featlist(base_cvsplits.format(i), "scale") for i in range(5)]
 
-		run_naive_bayes(training_examples_scale, [0,1,2,3], lfi)
-		run_naive_bayes(training_examples_xpos, [0,1,2,3,4], lfi)
+		for task in ["scale", "xpos"]:
+			print(task)
+			examples = load_examples_from_file(training_whole.format(task))
+			random.shuffle(examples)
+			num_per_fold = int(len(examples) / 5)
+			splits = [examples[i:i + num_per_fold] for i in range(0, len(examples) - 1, num_per_fold)]
+			run_naive_bayes(splits, label_sets[task], lfi, gamma)
 
-	# whole_training_scale = parse_featlist(training_whole, "scale")
-	# scale_labels = [0, 1, 2, 3]
-	# whole_training_xpos = parse_featlist(training_whole, "xpos")
-	# xpos_labels = [0, 1, 2, 3, 4]
-	#
-	# test_scale = parse_featlist(test, "scale")
-	# test_xpos = parse_featlist(test, "xpos")
-	#
-	# likes, rlikes, priors = naive_bayes(whole_training_scale, scale_labels, 0.0001, lfi)
-	# print("SCALE: whole training")
-	# test_naive_bayes(whole_training_scale, likes, rlikes, priors, scale_labels, lfi)
-	# print("SCALE: test")
-	# test_naive_bayes(test_scale, likes, rlikes, priors, scale_labels, lfi)
-	#
-	# likes, rlikes, priors = naive_bayes(whole_training_xpos, xpos_labels, 0.0001, lfi)
-	# print("XPOS: whole training")
-	# test_naive_bayes(whole_training_xpos, likes, rlikes, priors, xpos_labels, lfi)
-	# print("XPOS: test")
-	# test_naive_bayes(test_xpos, likes, rlikes, priors, xpos_labels, lfi)
+
+
+	if do_whole_test:
+		gamma = 10
+		for task in ["scale", "xpos"]:
+			print(task)
+			whole_training = load_examples_from_file(training_whole.format(task))
+			test_examples = load_examples_from_file(test.format(task))
+
+			likes, rlikes, priors = naive_bayes(whole_training, label_sets[task], gamma, lfi)
+			result = test_naive_bayes(whole_training, likes, rlikes, priors, label_sets[task], lfi)
+			print(result[-1])
+			result = test_naive_bayes(test_examples, likes, rlikes, priors, label_sets[task], lfi)
+			print(result[-1])

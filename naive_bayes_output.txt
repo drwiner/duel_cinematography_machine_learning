@@ -1,0 +1,29 @@
+scale
+
+gamma:	10	acc:	0.5221739130434783
+gamma:	6	acc:	0.523913043478261
+gamma:	4	acc:	0.5247826086956522
+gamma:	2	acc:	0.5160869565217392
+gamma:	1	acc:	0.5191304347826087
+
+xpos
+
+gamma:	10	acc:	0.48478260869565215
+gamma:	6	acc:	0.46304347826086956
+gamma:	4	acc:	0.4517391304347826
+gamma:	2	acc:	0.44217391304347825
+gamma:	1	acc:	0.4304347826086957
+
+
+scale
+learning naive bayes
+testing naive bayes
+0.5582608695652174
+testing naive bayes
+0.4807692307692308
+xpos
+learning naive bayes
+testing naive bayes
+0.4991304347826087
+testing naive bayes
+0.4543269230769231

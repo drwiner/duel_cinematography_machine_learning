@@ -6,6 +6,7 @@ import math
 import random
 from collections import namedtuple, defaultdict
 from generate_features import get_num_feats
+from collections import Counter
 
 LabeledEx = namedtuple('LabeledEx', ['label', 'feats'])
 
@@ -270,7 +271,7 @@ def get_x(examples, x):
 	return z[:x]
 
 
-def get_x_trees(examples, num_examples_per_tree, num_trees, label):
+def get_x_trees(examples, num_examples_per_tree, num_trees, labels, d):
 	dtrees = []
 	for i in range(num_trees):
 		print(i)
@@ -279,7 +280,7 @@ def get_x_trees(examples, num_examples_per_tree, num_trees, label):
 		for example in sub_set:
 			relevant_feats.extend(example.feats)
 		relevant_feats = list(set(relevant_feats))
-		dtree = ID3_depth_with_target(sub_set, relevant_feats, label, 3)
+		dtree = ID3_depth_multiclass(sub_set, relevant_feats, labels, d)
 		dtrees.append(dtree)
 	return dtrees
 
@@ -414,6 +415,63 @@ def record_stumps(tasks, features, label_dict, d):
 					file_name.write(")\n")
 
 
+def run_bagged_forest_prediction_multiclass(dtrees, examples, test_examples):
+
+	num_correct = 0
+	print("accuracy for bagged trees: training")
+	for i, example in enumerate(examples):
+		decision = []
+		for dtree in dtrees:
+			decision.append(use_tree(dtree, example))
+		count_decisions = Counter(decision)
+		item = count_decisions.most_common(1)[0][0]
+		if item == example.label:
+			num_correct += 1
+
+	print(num_correct / len(examples))
+
+	num_correct = 0
+	print("accuracy for bagged trees: test")
+	for example in test_examples:
+		decision = []
+		for dtree in dtrees:
+			decision.append(use_tree(dtree, example))
+		count_decisions = Counter(decision)
+		item = count_decisions.most_common(1)[0][0]
+		if item == example.label:
+			num_correct += 1
+
+	print(num_correct / len(test_examples))
+
+
+def run_bagged_forest_prediction_for_output(task, d, dtrees, label_sets, examples, test_examples):
+	training_data = []
+	for example in examples:
+		decision = []
+		for dtree in dtrees:
+			decision.append(use_tree(dtree, example))
+		training_data.append(decision)
+
+	with open("bagged_forest_training_{}_{}.txt".format(task, d), 'w') as file_name:
+		for ex, train in zip(examples, training_data):
+			file_name.write(str(ex.label))
+			for i, decision in enumerate(train):
+				file_name.write(" " + str((i+1)*len(label_sets[task]) + decision)+ ":1")
+			file_name.write("\n")
+
+	test_data = []
+	for example in test_examples:
+		decision = []
+		for dtree in dtrees:
+			decision.append(use_tree(dtree, example))
+		test_data.append(decision)
+
+	with open("bagged_forest_test_{}_{}.txt".format(task, d), 'w') as file_name:
+		for ex, train in zip(test_examples, test_data):
+			file_name.write(str(ex.label))
+			for i, decision in enumerate(train):
+				file_name.write(" " + str((i + 1) * len(label_sets[task]) + decision) + ":1")
+			file_name.write("\n")
 
 if __name__ == '__main__':
 	# read input
@@ -429,7 +487,11 @@ if __name__ == '__main__':
 	do_record_stumps = 0
 	do_cv_multiclass = 0
 	do_cv_binaryclass = 0
-	do_test_tree = 1
+	do_test_TRAIN_tree = 0
+	do_test_tree = 0
+	do_create_forest = 0
+	do_forest_avg_prediction = 0
+	do_forest_output = 1
 
 	# // largest index
 	lfi = get_num_feats()
@@ -444,7 +506,6 @@ if __name__ == '__main__':
 	if do_record_stumps:
 		for d in range(1,5):
 			record_stumps(["scale", "xpos"], list(range(1, lfi+1)), label_sets, d)
-
 
 	# cross validation for mult-class
 	if do_cv_multiclass:
@@ -464,7 +525,26 @@ if __name__ == '__main__':
 			for label in label_sets[task]:
 				cross_validation_with_target_depth(splits, list(range(1, lfi+1)), label, depths)
 
+	if do_test_TRAIN_tree:
 
+		best_depth_dict = {"xpos": {0: 3, 1: 3, 2: 28, 3: 3, 4: 3},
+		                   "scale": {0: 28, 1: 8, 2: 3, 3: 13}}
+
+		for task in ["scale", "xpos"]:
+			examples = load_examples_from_file(train_file.format(task))
+			test_examples = load_examples_from_file(test_file.format(task))
+
+			for label in label_sets[task]:
+				target_tree = ID3_depth_with_target(examples, list(range(1, lfi + 1)), label_of_interest=label,
+				                                    depth=best_depth_dict[task][label])
+				acc = test_tree_target(examples, target_tree, label)
+				print("{}\t{}\t{}".format(task, label, acc))
+
+			multiclass_tree = ID3_depth_multiclass(examples, list(range(1, lfi + 1)), labels=label_sets[task],
+			                                       depth=multiclass_depth[task])
+
+			acc = test_tree_multiclass(examples, multiclass_tree, label_sets[task])
+			print("{}\t{}".format(task, acc))
 
 	# create decision tree for each label for each task
 	if do_test_tree:
@@ -485,3 +565,56 @@ if __name__ == '__main__':
 
 			acc = test_tree_multiclass(test_examples, multiclass_tree, label_sets[task])
 			print("{}\t{}".format(task, acc))
+
+
+	if do_create_forest:
+		# multiclass forest
+		for d in range(5,16,3):
+			for task in ["scale", "xpos"]:
+				examples = load_examples_from_file(train_file.format(task))
+				trees = get_x_trees(examples, 100, 1000, label_sets[task], d)
+
+				with open("forest_{}_{}.txt".format(task, d), 'w') as dtree_file:
+					for dtree in trees:
+						dtree_file.write(str(dtree))
+						dtree_file.write('\n')
+
+	if do_forest_avg_prediction:
+		example_dict = dict()
+		test_dict = dict()
+
+		for task in ["scale", "xpos"]:
+			example_dict[task] = load_examples_from_file(train_file.format(task))
+			test_dict[task] = load_examples_from_file(test_file.format(task))
+
+		for d in range(5,16,3):
+			print(d)
+			for task in ["scale", "xpos"]:
+				print(task)
+				dtrees = []
+				file_name = "forest_{}_{}.txt".format(task, d)
+				with open(file_name, 'r') as dtree_file:
+					for line in dtree_file:
+						dtrees.append(eval(line))
+
+				run_bagged_forest_prediction_multiclass(dtrees, example_dict[task], test_dict[task])
+
+	if do_forest_output:
+		example_dict = dict()
+		test_dict = dict()
+
+		for task in ["scale", "xpos"]:
+			example_dict[task] = load_examples_from_file(train_file.format(task))
+			test_dict[task] = load_examples_from_file(test_file.format(task))
+
+		for d in range(5, 16, 3):
+			print(d)
+			for task in ["scale", "xpos"]:
+				print(task)
+				dtrees = []
+				file_name = "forest_{}_{}.txt".format(task, d)
+				with open(file_name, 'r') as dtree_file:
+					for line in dtree_file:
+						dtrees.append(eval(line))
+
+				run_bagged_forest_prediction_for_output(task, d, dtrees, label_sets, example_dict[task], test_dict[task])

@@ -1,7 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2806e9a-2029-4f57-bf54-309e4565cb71" name="Default" comment="" />
+    <list default="true" id="a2806e9a-2029-4f57-bf54-309e4565cb71" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/cross_validation_forests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SVM.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/accuracy_xpos.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/features.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cross_validation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/CV_Splits/train_0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/CV_Splits/train_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/CV_Splits/train_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/CV_Splits/train_3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/CV_Splits/train_4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/perceptron.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scale.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/xpos.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ADABOOST.py" afterPath="$PROJECT_DIR$/ADABOOST.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ID3.py" afterPath="$PROJECT_DIR$/ID3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ID3_depth_test_CVs_1.txt" afterPath="$PROJECT_DIR$/ID3_depth_test_CVs_1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NAIVE_BAYES.py" afterPath="$PROJECT_DIR$/NAIVE_BAYES.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target_adaboost_results.txt" afterPath="$PROJECT_DIR$/target_adaboost_results.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/generate_features.py" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/generate_features.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/liblinear_shellscript.py" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/liblinear_shellscript.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/liblinearutil.py" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/liblinearutil.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/model.scale" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/model.scale" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/model.xpos" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/model.xpos" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/predict.exe" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/predict.exe" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/predict.scale" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/predict.scale" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/predict.xpos" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/predict.xpos" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/test.scale" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/test.scale" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/test.xpos" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/test.xpos" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/train.exe" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/train.exe" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/training.scale" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/training.scale" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/training.xpos" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/training.xpos" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features_cleaned.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features_cleaned.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features_cleaned_action-pruned.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features_cleaned_action-pruned.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features_cleaned_action-pruned_full.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features_cleaned_action-pruned_full.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features_cleaned_full.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features_cleaned_full.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features_full.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features_full.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/task=scale_depth=1.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=scale_depth=1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/task=scale_depth=2.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=scale_depth=2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/task=scale_depth=3.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=scale_depth=3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/task=scale_depth=4.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=scale_depth=4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/task=xpos_depth=1.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=xpos_depth=1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/task=xpos_depth=2.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=xpos_depth=2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/task=xpos_depth=3.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=xpos_depth=3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/task=xpos_depth=4.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=xpos_depth=4.txt" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,52 +64,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="naivebayes_cv_output2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/naivebayes_cv_output2.txt">
+      <file leaf-file-name="cross_validation_forests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/cross_validation_forests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="70" column="20" lean-forward="true" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+            <state relative-caret-position="-292">
+              <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ADABOOST.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ADABOOST.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5356">
-              <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="187">
+                <caret line="10" column="144" lean-forward="true" selection-start-line="10" selection-start-column="144" selection-end-line="10" selection-end-column="144" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scale.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scale.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ID3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ID3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="478" column="12" lean-forward="false" selection-start-line="478" selection-start-column="12" selection-end-line="481" selection-end-column="60" />
-              <folding>
-                <element signature="e#49#76#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="task=scale_depth=1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task=scale_depth=1.txt">
+      <file leaf-file-name="background_check.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/background_check.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -69,24 +97,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task=scale_depth=4.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task=scale_depth=4.txt">
+      <file leaf-file-name="feature_engineering.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/feature_engineering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+            <state relative-caret-position="320">
+              <caret line="340" column="40" lean-forward="false" selection-start-line="340" selection-start-column="40" selection-end-line="340" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SVM.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SVM.py">
+      <file leaf-file-name="generate_features.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/generate_features.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-2298">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="split_into_test_and_folds.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/split_into_test_and_folds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,16 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>extract_labeled_features</find>
-      <find>foreground</find>
-      <find>FG</find>
-      <find>extract_zeta</find>
-      <find>clean_observations</find>
-      <find>'bc'</find>
-      <find>drawguns</find>
-      <find>drawgun</find>
-      <find>clean_actions</find>
-      <find>get_most_frequent_actions</find>
       <find>yg</find>
       <find>action_sh_e</find>
       <find>update_weights</find>
@@ -124,14 +150,28 @@
       <find>inf</find>
       <find>shuffle</find>
       <find>get_best_classifier_target</find>
-      <find>use_tree</find>
       <find>calc_alpha</find>
       <find>stump</find>
       <find>get_best_classifier</find>
       <find>calc_error_target</find>
       <find>use_classifier_target</find>
       <find>adaboost</find>
+      <find>use_tree</find>
+      <find>load_exam</find>
+      <find>load_examples_from_file</find>
+      <find>ID3_depth_multiclass</find>
+      <find>Counter</find>
+      <find>base_cvsplits</find>
+      <find>run_bagged_forest_prediction_multiclass</find>
+      <find>is_finished</find>
+      <find>load_</find>
+      <find>cross</find>
+      <find>get_x_trees</find>
+      <find>test_naive_bayes</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -143,18 +183,23 @@
         <option value="$PROJECT_DIR$/observation_features_cleaned_action-pruned_full.txt" />
         <option value="$PROJECT_DIR$/action_types.txt" />
         <option value="$PROJECT_DIR$/feature_engineering.py" />
-        <option value="$PROJECT_DIR$/SVM_off_the_shelf/generate_features.py" />
         <option value="$PROJECT_DIR$/SVM_off_the_shelf/liblinear_shellscript.py" />
         <option value="$PROJECT_DIR$/generate_features.py" />
         <option value="$PROJECT_DIR$/SVM.py" />
         <option value="$PROJECT_DIR$/test_off-the_shelf_adaboost.py" />
         <option value="$PROJECT_DIR$/split_into_test_and_folds.py" />
-        <option value="$PROJECT_DIR$/NAIVE_BAYES.py" />
         <option value="$PROJECT_DIR$/naivebayes_cv_output2.txt" />
         <option value="$PROJECT_DIR$/scale.txt" />
-        <option value="$PROJECT_DIR$/ID3.py" />
         <option value="$PROJECT_DIR$/Multiclass_Adaboost_off_the_shelf/off_shelf_adaboost.py" />
         <option value="$PROJECT_DIR$/ADABOOST.py" />
+        <option value="$PROJECT_DIR$/NAIVE_BAYES.py" />
+        <option value="$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale.txt" />
+        <option value="$PROJECT_DIR$/bagged_forest_test_scale_5.txt" />
+        <option value="$PROJECT_DIR$/ID3.py" />
+        <option value="$PROJECT_DIR$/SVM_off_the_shelf/generate_features.py" />
+        <option value="$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_14.txt" />
+        <option value="$PROJECT_DIR$/SVM_off_the_shelf/cross_validation_forests.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -164,6 +209,7 @@
     <option name="width" value="2576" />
     <option name="height" value="1416" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -193,52 +239,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CV_Splits" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ML_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SVM_off_the_shelf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -246,49 +246,22 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Documents/Python/MachineLearningHW/ML_Project/observation_features_cleaned_action-pruned_full.txt" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Documents\Python\MachineLearningHW\ML_Project\bagged_forests_multiclass" />
+      <recent name="D:\Documents\Python\MachineLearningHW\ML_Project\SVM_off_the_shelf\accuracies" />
+      <recent name="D:\Documents\Python\MachineLearningHW\ML_Project\Initial_dataObservations" />
+      <recent name="D:\Documents\Python\MachineLearningHW\ML_Project\bagged_binary_trees" />
+      <recent name="D:\Documents\Python\MachineLearningHW\ML_Project\" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Documents\Python\MachineLearningHW\ML_Project" />
       <recent name="D:\Documents\Python\MachineLearningHW\ML_Project\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ADABOOST">
-    <configuration default="false" name="SVM" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVM.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test_off-the_shelf_adaboost" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_off-the_shelf_adaboost.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.cross_validation_forests">
     <configuration default="false" name="ID3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -306,23 +279,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="split_into_test_and_folds" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ML_Project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/split_into_test_and_folds.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="ADABOOST" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -336,6 +292,57 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="ML_Project" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ADABOOST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="NAIVE_BAYES" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ML_Project" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NAIVE_BAYES.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="generate_features" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SVM_off_the_shelf" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ML_Project" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVM_off_the_shelf/generate_features.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="cross_validation_forests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SVM_off_the_shelf" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ML_Project" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SVM_off_the_shelf/cross_validation_forests.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -486,19 +493,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.SVM" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test_off-the_shelf_adaboost" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ID3" />
-      <item index="3" class="java.lang.String" itemvalue="Python.split_into_test_and_folds" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ADABOOST" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ID3" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ADABOOST" />
+      <item index="2" class="java.lang.String" itemvalue="Python.NAIVE_BAYES" />
+      <item index="3" class="java.lang.String" itemvalue="Python.generate_features" />
+      <item index="4" class="java.lang.String" itemvalue="Python.cross_validation_forests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ADABOOST" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ID3" />
-        <item index="2" class="java.lang.String" itemvalue="Python.split_into_test_and_folds" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_off-the_shelf_adaboost" />
-        <item index="4" class="java.lang.String" itemvalue="Python.SVM" />
+        <item index="0" class="java.lang.String" itemvalue="Python.cross_validation_forests" />
+        <item index="1" class="java.lang.String" itemvalue="Python.generate_features" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ID3" />
+        <item index="3" class="java.lang.String" itemvalue="Python.NAIVE_BAYES" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ADABOOST" />
       </list>
     </recent_temporary>
   </component>
@@ -521,14 +528,14 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1891253" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2788162" sideWeight="0.51654845" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2788162" sideWeight="0.52442867" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2788162" sideWeight="0.48345155" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2788162" sideWeight="0.4755713" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32087228" sideWeight="0.90543735" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32087228" sideWeight="0.891647" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -566,38 +573,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/NAIVE_BAYES.py</url>
-          <line>78</line>
+          <line>57</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/NAIVE_BAYES.py</url>
-          <line>113</line>
+          <line>92</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SVM_off_the_shelf/generate_features.py</url>
-          <line>181</line>
+          <url>file://$PROJECT_DIR$/LogRegr_off_the_shelf/generate_features.py</url>
+          <line>239</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SVM_off_the_shelf/liblinear_shellscript.py</url>
+          <url>file://$PROJECT_DIR$/LogRegr_off_the_shelf/liblinear_shellscript.py</url>
           <line>9</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SVM.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="39" />
+          <url>file://$PROJECT_DIR$/ADABOOST.py</url>
+          <line>266</line>
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SVM.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="40" />
+          <url>file://$PROJECT_DIR$/ADABOOST.py</url>
+          <line>148</line>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/ID3.py</url>
-          <line>198</line>
-          <option name="timeStamp" value="56" />
+          <line>426</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -607,88 +614,23 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="74" />
+      <option name="time" value="78" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/agnostic_check.py">
+    <entry file="file://$PROJECT_DIR$/naivebayes_cv_output2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="586">
+          <caret line="72" column="42" lean-forward="false" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_monkey_qt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cross_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5508">
-          <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/background_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/observation_features_cleaned_full.txt">
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/features.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/observation_features_cleaned_action-pruned.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39555">
-          <caret line="317" column="0" lean-forward="false" selection-start-line="317" selection-start-column="0" selection-end-line="348" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/observation_features_cleaned.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="371" column="34" lean-forward="false" selection-start-line="371" selection-start-column="34" selection-end-line="371" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SceneDataStructs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#104#138#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/observation_features.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="5686" column="41" lean-forward="false" selection-start-line="5686" selection-start-column="41" selection-end-line="5686" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/observation_features_full.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="114" column="20" lean-forward="false" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Programs/Anaconda3/Lib/collections/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -701,132 +643,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scenes.txt">
+    <entry file="file://$PROJECT_DIR$/bagged_forests_multiclass/forest_scale_8.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/perceptron.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5406">
-          <caret line="320" column="32" lean-forward="false" selection-start-line="320" selection-start-column="32" selection-end-line="320" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/durations.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-45424">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/observation_features_cleaned_action-pruned_full.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42670">
-          <caret line="2510" column="80" lean-forward="false" selection-start-line="2510" selection-start-column="72" selection-end-line="2510" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/action_types.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_engineering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6324">
-          <caret line="372" column="0" lean-forward="false" selection-start-line="372" selection-start-column="0" selection-end-line="372" selection-end-column="0" />
-          <folding>
-            <element signature="e#90#120#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/features.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3142">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/training.scale">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="127" column="58" lean-forward="false" selection-start-line="127" selection-start-column="58" selection-end-line="127" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_xpos.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/model.scale">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/generate_features.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="181" column="4" lean-forward="false" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_features.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_off-the_shelf_adaboost.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/liblinear_shellscript.py">
+    <entry file="file://$PROJECT_DIR$/bagged_forests_multiclass/bagged_forest_training_xpos_5.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="357">
+          <caret line="0" column="5891" lean-forward="true" selection-start-line="0" selection-start-column="5891" selection-end-line="0" selection-end-column="5891" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/test.txt">
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/liblinearutil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -834,9 +675,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/test.xpos">
+    <entry file="file://$PROJECT_DIR$/bagged_forests_multiclass/bagged_forest_test_xpos_11.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6243">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -858,171 +699,342 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/split_into_test_and_folds.py">
+    <entry file="file://$PROJECT_DIR$/action_types.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NAIVE_BAYES.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="156" column="24" lean-forward="true" selection-start-line="156" selection-start-column="24" selection-end-line="156" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/naivebayes_cv_output.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="81" column="19" lean-forward="false" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/naivebayes_cv_output2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="70" column="20" lean-forward="true" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scale.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task=xpos_depth=1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2207">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task=xpos_depth=9.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task=scale_depth=9.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Programs/Anaconda3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task=scale_depth=8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task=xpos_depth=4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task=scale_depth=2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task=scale_depth=3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task=scale_depth=4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task=scale_depth=1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task=xpos_depth=3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5503">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ID3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="478" column="12" lean-forward="false" selection-start-line="478" selection-start-column="12" selection-end-line="481" selection-end-column="60" />
-          <folding>
-            <element signature="e#49#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Multiclass_Adaboost_off_the_shelf/off_shelf_adaboost.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="236" column="20" lean-forward="false" selection-start-line="236" selection-start-column="20" selection-end-line="236" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ADABOOST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5356">
-          <caret line="88" column="22" lean-forward="false" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+        <state relative-caret-position="-286">
+          <caret line="239" column="4" lean-forward="false" selection-start-line="239" selection-start-column="4" selection-end-line="239" selection-end-column="65" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/liblinear_shellscript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagged_forests_multiclass/bagged_forest_test_scale_14.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4386">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NAIVE_BAYES.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1627">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_xpos.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ID3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="617" column="49" lean-forward="false" selection-start-line="612" selection-start-column="16" selection-end-line="617" selection-end-column="49" />
+          <folding>
+            <element signature="e#49#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train_xpos_4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2346">
+          <caret line="0" column="38907" lean-forward="true" selection-start-line="0" selection-start-column="38907" selection-end-line="0" selection-end-column="38907" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train.xpos_4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6834">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/generate_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="194" column="4" lean-forward="false" selection-start-line="194" selection-start-column="4" selection-end-line="195" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_1_8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_1_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_14.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/CV_Splits/training.scale_0_5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_4_8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/model.xpos_14">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/model.scale_11">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/accuracies/accuracy_scale_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/accuracies/accuracy_scale_8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/accuracies/accuracy_scale_11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/accuracies/accuracy_scale_14.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/accuracies/accuracy_xpos_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/accuracies/accuracy_xpos_8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/accuracies/accuracy_xpos_11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/accuracies/accuracy_xpos_14.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagged_forests_multiclass/forest_scale_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="9" column="101" lean-forward="false" selection-start-line="9" selection-start-column="101" selection-end-line="9" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagged_forests_multiclass/bagged_forest_test_scale_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="5257" lean-forward="false" selection-start-line="12" selection-start-column="5257" selection-end-line="12" selection-end-column="5257" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagged_forests_multiclass/bagged_forest_training_scale_5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bagged_forests_multiclass/forest_scale_11.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/split_into_test_and_folds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_engineering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="340" column="40" lean-forward="false" selection-start-line="340" selection-start-column="40" selection-end-line="340" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate_features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2298">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/cross_validation_forests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-292">
+          <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scale.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/background_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cross_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2434">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ID3_depth_test_CVs_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="10" column="144" lean-forward="true" selection-start-line="10" selection-start-column="144" selection-end-line="10" selection-end-column="144" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
