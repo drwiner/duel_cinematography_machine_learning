@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2806e9a-2029-4f57-bf54-309e4565cb71" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/cross_validation_forests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SVM.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/accuracy_xpos.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/features.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cross_validation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/CV_Splits/train_0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/CV_Splits/train_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/CV_Splits/train_2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/CV_Splits/train_3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/CV_Splits/train_4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/perceptron.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scale.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/xpos.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ADABOOST.py" afterPath="$PROJECT_DIR$/ADABOOST.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ID3.py" afterPath="$PROJECT_DIR$/ID3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ID3_depth_test_CVs_1.txt" afterPath="$PROJECT_DIR$/ID3_depth_test_CVs_1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NAIVE_BAYES.py" afterPath="$PROJECT_DIR$/NAIVE_BAYES.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target_adaboost_results.txt" afterPath="$PROJECT_DIR$/target_adaboost_results.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/generate_features.py" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/generate_features.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/liblinear_shellscript.py" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/liblinear_shellscript.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/liblinearutil.py" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/liblinearutil.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/model.scale" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/model.scale" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/model.xpos" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/model.xpos" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/predict.exe" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/predict.exe" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/predict.scale" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/predict.scale" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/predict.xpos" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/predict.xpos" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/test.scale" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/test.scale" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/test.xpos" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/test.xpos" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/train.exe" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/train.exe" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/training.scale" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/training.scale" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SVM_off_the_shelf/training.xpos" afterPath="$PROJECT_DIR$/LogRegr_off_the_shelf/training.xpos" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features_cleaned.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features_cleaned.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features_cleaned_action-pruned.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features_cleaned_action-pruned.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features_cleaned_action-pruned_full.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features_cleaned_action-pruned_full.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features_cleaned_full.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features_cleaned_full.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/observation_features_full.txt" afterPath="$PROJECT_DIR$/Initial_dataObservations/observation_features_full.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/task=scale_depth=1.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=scale_depth=1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/task=scale_depth=2.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=scale_depth=2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/task=scale_depth=3.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=scale_depth=3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/task=scale_depth=4.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=scale_depth=4.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/task=xpos_depth=1.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=xpos_depth=1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/task=xpos_depth=2.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=xpos_depth=2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/task=xpos_depth=3.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=xpos_depth=3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/task=xpos_depth=4.txt" afterPath="$PROJECT_DIR$/bagged_binary_trees/task=xpos_depth=4.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +20,7 @@
       <file leaf-file-name="cross_validation_forests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/cross_validation_forests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-292">
+            <state relative-caret-position="1224">
               <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
               <folding />
             </state>
@@ -78,8 +31,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="187">
-                <caret line="10" column="144" lean-forward="true" selection-start-line="10" selection-start-column="144" selection-end-line="10" selection-end-column="144" />
+              <first_editor relative-caret-position="408">
+                <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -100,7 +53,7 @@
       <file leaf-file-name="feature_engineering.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature_engineering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
+            <state relative-caret-position="5746">
               <caret line="340" column="40" lean-forward="false" selection-start-line="340" selection-start-column="40" selection-end-line="340" selection-end-column="40" />
               <folding />
             </state>
@@ -110,7 +63,7 @@
       <file leaf-file-name="generate_features.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generate_features.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2298">
+            <state relative-caret-position="442">
               <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
@@ -225,8 +178,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,7 +197,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cinepydpocl" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Documents/Python/MachineLearningHW/ML_Project/observation_features_cleaned_action-pruned_full.txt" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -529,20 +482,20 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1891253" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2788162" sideWeight="0.52442867" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2788162" sideWeight="0.4755713" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32087228" sideWeight="0.891647" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2788162" sideWeight="0.4755713" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32087228" sideWeight="0.891647" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -623,47 +576,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="586">
           <caret line="72" column="42" lean-forward="false" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/features.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train_3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="304" lean-forward="false" selection-start-line="23" selection-start-column="304" selection-end-line="23" selection-end-column="304" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/features.py" />
+    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train_3" />
     <entry file="file://$PROJECT_DIR$/bagged_forests_multiclass/forest_scale_8.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-45424">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale.txt" />
     <entry file="file://$PROJECT_DIR$/bagged_forests_multiclass/bagged_forest_training_xpos_5.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="0" column="5891" lean-forward="true" selection-start-line="0" selection-start-column="5891" selection-end-line="0" selection-end-column="5891" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -671,7 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,31 +607,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train_1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train_0">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train_1" />
+    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train_0" />
     <entry file="file://$PROJECT_DIR$/action_types.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4386">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,14 +654,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_xpos.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_xpos.txt" />
     <entry file="file://$PROJECT_DIR$/ID3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="669">
@@ -761,22 +665,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train_xpos_4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="0" column="38907" lean-forward="true" selection-start-line="0" selection-start-column="38907" selection-end-line="0" selection-end-column="38907" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train.xpos_4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6834">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train_xpos_4" />
+    <entry file="file://$PROJECT_DIR$/data/CV_Splits/train.xpos_4" />
     <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/generate_features.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -787,91 +677,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_1_8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_1_5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_14.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_11.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_1_8.txt" />
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_1_5.txt" />
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_14.txt" />
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_11.txt" />
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_8.txt" />
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_0_5.txt" />
     <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/CV_Splits/training.scale_0_5">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_4_8.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/model.xpos_14">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/model.scale_11">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/accuracy_scale_4_8.txt" />
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/model.xpos_14" />
+    <entry file="file://$PROJECT_DIR$/SVM_off_the_shelf/model.scale_11" />
     <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/accuracies/accuracy_scale_5.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -879,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,7 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="9" column="101" lean-forward="false" selection-start-line="9" selection-start-column="101" selection-end-line="9" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="12" column="5257" lean-forward="false" selection-start-line="12" selection-start-column="5257" selection-end-line="12" selection-end-column="5257" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -973,7 +787,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feature_engineering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
+        <state relative-caret-position="5746">
           <caret line="340" column="40" lean-forward="false" selection-start-line="340" selection-start-column="40" selection-end-line="340" selection-end-column="40" />
           <folding />
         </state>
@@ -981,7 +795,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generate_features.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2298">
+        <state relative-caret-position="442">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
@@ -989,20 +803,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LogRegr_off_the_shelf/cross_validation_forests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-292">
+        <state relative-caret-position="1224">
           <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scale.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scale.txt" />
     <entry file="file://$PROJECT_DIR$/background_check.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1011,27 +818,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cross_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2434">
-          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cross_validation.py" />
     <entry file="file://$PROJECT_DIR$/ID3_depth_test_CVs_1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="10" column="144" lean-forward="true" selection-start-line="10" selection-start-column="144" selection-end-line="10" selection-end-column="144" />
+          <first_editor relative-caret-position="408">
+            <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
             <folding />
           </first_editor>
           <second_editor />

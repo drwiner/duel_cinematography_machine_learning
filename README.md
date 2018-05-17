@@ -1,5 +1,5 @@
 ## David R. Winer
-## Machine Learning Probject (Fall 2017)
+## Machine Learning Project (Fall 2017)
 
 # Algorithms: 
 - ID3.py : binary, multi-class, and bagging
@@ -21,4 +21,3 @@
 
 # Other Notes:
 - Implemented with Python 3.x (x>=3)
-- some items have been placed in folders for organization
